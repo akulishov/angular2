@@ -1,0 +1,12 @@
+<style>
+        .well div {
+            color:blue;
+        }
+    </style>
+<div>
+    <h1>Upcoming events</h1>
+    <div class="col-md-5" *ngFor="let event of events">
+        <event-thumbnail [event]="event"></event-thumbnail>
+    </div>
+    <button class="btn btn-primary" (click)="eventClickMe(thumbnail)"> Click me</button>
+</div>
